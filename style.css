@@ -1,0 +1,484 @@
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 10px;
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        p {
+            color: black;
+            font-size: 2rem;
+            margin-top: 5px;
+            line-height: 2.5rem;
+            font-weight: 300;
+            letter-spacing: .05rem;
+        }
+
+        .container {
+
+            display: flex;
+
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            margin-top: 15px;
+            margin-bottom: 0px;
+
+
+        }
+
+        .nav-bar .nav-img {
+            padding-right: 10px;
+           
+        }
+
+        .nav-list ul li {
+
+            width: 300px;
+
+            text-decoration: none;
+            color: white;
+            text-transform: uppercase;
+
+            margin: 0px;
+
+        }
+
+        .nav-list ul {
+            display: flex;
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 0.2rem;
+            width: 900px;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+
+        .nav-list ul a:hover,
+        a:active {
+            padding: 14px 16px;
+            text-decoration: none;
+            border-bottom: 3px solid greenyellow;
+
+        }
+
+        /*   chú ý object-fit tag  */
+        #header {
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 40px;
+        }
+
+        /* header */
+        #header .header {
+            min-height: 8vh;
+            background-color: rgba(31, 30, 30, 0.6);
+            transition: .3s ease background-color;
+        }
+
+        #header .nav-bar {
+
+            width: 100%;
+            height: 100%;
+            max-width: 600px;
+            padding: 0px;
+        }
+
+        #header .nav-bar img {
+            width: 40px;
+            height: auto;
+            padding-left: 20px;
+        }
+
+        .nav-list ul li a:link {
+            text-decoration: none;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /*home  */
+        #hero .home-container-img {
+            position: relative;
+
+            filter: brightness(50%);
+        }
+
+        #hero .home-container-para-1 p {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+
+        }
+
+        #hero .home-container-para-2 p {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 40px;
+
+        }
+
+        #hero .home-container-button {
+            position: absolute;
+            top: 70%;
+            left: 45%;
+
+        }
+
+        .button-home {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 52px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+
+        .about-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 100%;
+            height: 300px;
+
+        }
+
+        .about-container p {
+            text-align: center;
+
+        }
+
+        .investment {
+            position: relative;
+            width: 500px;
+            height: 300px;
+        }
+
+        .investment-img {
+            position: absolute;
+            top: 20%;
+            left: 46%;
+        }
+
+        .investment-p {
+            position: absolute;
+            top: 45%;
+            left: 7%;
+        }
+
+        .portfolio {
+            position: relative;
+            width: 500px;
+            height: 300px;
+        }
+
+        .portfolio-img {
+            position: absolute;
+            top: 20%;
+            left: 48%;
+        }
+
+        .portfolio-p {
+            position: absolute;
+            top: 45%;
+            left: 7%;
+        }
+
+        .tax {
+            position: relative;
+            width: 500px;
+            height: 300px;
+        }
+
+        .tax-img {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+        }
+
+        .tax-p {
+            position: absolute;
+            top: 45%;
+            left: 7%;
+        }
+
+        #home-img {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 500px;
+
+        }
+
+        .home-img {
+            width: 1950px;
+            height: 500px;
+        }
+
+        .para {
+            background-color: rgb(62, 167, 62);
+            display: flex;
+            flex: row;
+
+
+        }
+
+        .space {
+            width: 100px;
+        }
+
+        .para p {
+            color: white;
+
+        }
+
+        .para button {
+            background-color: #4CAF50;
+            border: line;
+            border-color: white;
+            color: white;
+            padding: 15px 62px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .case-para {
+            width: 100%;
+            height: 250px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .case-img {
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .case-img img {
+            width: 350px;
+            height: 230px;
+            padding: 5px;
+        }
+
+        .blog-up-shark {
+            width: 100%;
+            height: 550px;
+            display: flex;
+            flex-direction: row;
+
+            justify-content: flex-start;
+            padding-top: 150px;
+            padding-bottom: 40px;
+
+
+
+        }
+
+        .blog-para-img {
+            width: 50%;
+            height: 550px;
+        }
+
+        .blog-para {
+             width: 50%; /* cais nayf để with 50%  theo cái div mẹ được nhưng mà do muôn chỉnh nó nằm giữa ""who are you" nên đành chỉnh số
+             muốn chỉnh được 50-50 của cái 100 nên để nó ở cái div riêng không nằm trong cái div nào cẢ*/
+            height: 550px;
+            background-color: #37a6e7;
+            display: flex;
+            flex-direction: row;
+           
+
+        }
+
+        .blog-para-p p {
+            color: aliceblue;
+        }
+
+        .blog-para .space-second {
+            width: 80px;
+        }
+
+        .blog-button {
+            background-color: #37a6e7;
+            border: line;
+            color: white;
+            padding: 15px 52px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 15px;
+        }
+#blog-shark-para {
+    width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            padding:170px;
+            padding-bottom: 100px;
+            margin: auto;
+           
+            
+}
+        .blog-shark-para {
+           
+            padding: 30px;
+            background-color: white;
+            
+            text-align:center;
+
+        }
+        
+
+        #blog-shark-img {
+            margin: 40px;
+            padding-top: 120px;
+            padding-bottom: 10px;
+        }
+
+        .blog-shark-img {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          
+        }
+
+        .shark-img img {
+            width: 400px;
+            height: 250px;
+            shape-outside: ellipse(50% 20%);
+            clip-path: ellipse(50% 50%);
+
+        }
+
+        .contact-1 {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            flex-direction: row;
+            padding: 0px;
+            padding-top: 60px;
+        }
+
+        .contact-img {
+            width: 50%;
+            height: 500px;
+        }
+
+        .contact-content {
+            width: 50%;
+            height: 500px;
+        }
+
+        .contact-content {
+            background-color: gainsboro;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .space-3 {
+            width: 30px;
+        }
+
+        input {
+            width: 600px;
+            height: 30px;
+            border: none;
+            background-color: aliceblue;
+            border-radius: 5px;
+            color: rgb(190, 202, 202);
+        }
+
+        #contact-2 {
+            width: 100%;
+            height: 350px;
+            background-color: rgb(99, 99, 90);
+            min-height: 200px;
+
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+
+        .social-icon img {
+            width: 70px;
+            height: 70px;
+            display: flex;
+
+            margin-top: 100px;
+            margin-bottom: 0px;
+
+        }
+
+        .social-icon {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .social-item img {
+            filter: grayscale(1);
+            transition: .3s ease filter;
+        }
+
+        .social-item:hover img {
+            filter: grayscale(0);
+        }
+    
